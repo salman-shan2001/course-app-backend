@@ -1,15 +1,15 @@
-const mongoose=require("mongoose")
+const mongoose=require("mongoose")      //imported mongoose
 const schema=mongoose.Schema(
     {
-        "title":String,
+        "title":String,                    //created structure
         "description":String,
         "date":String,
         "duration":String,
         "venue":String,
-        "trainer-name":String
+        "trainerName":String
 
     }
 )
 
-const coursemodel=mongoose.model("courses",schema)
-module.exports={coursemodel}
+const coursemodel=mongoose.model("courses",schema)     //the schemas are copied to coursemodel object 
+module.exports={coursemodel}                           //exported the object
